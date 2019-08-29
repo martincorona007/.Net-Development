@@ -1,0 +1,7 @@
+C:\Users\alien\source\repos\Arrays\Arrays\bin\Debug\Arrays.exe.config
+C:\Users\alien\source\repos\Arrays\Arrays\bin\Debug\Arrays.exe
+C:\Users\alien\source\repos\Arrays\Arrays\bin\Debug\Arrays.pdb
+C:\Users\alien\source\repos\Arrays\Arrays\obj\Debug\Arrays.csprojAssemblyReference.cache
+C:\Users\alien\source\repos\Arrays\Arrays\obj\Debug\Arrays.csproj.CoreCompileInputs.cache
+C:\Users\alien\source\repos\Arrays\Arrays\obj\Debug\Arrays.exe
+C:\Users\alien\source\repos\Arrays\Arrays\obj\Debug\Arrays.pdb
