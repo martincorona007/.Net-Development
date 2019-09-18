@@ -1,0 +1,12 @@
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\bin\Debug\WindowsForms_Multiplication.exe.config
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\bin\Debug\WindowsForms_Multiplication.exe
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\bin\Debug\WindowsForms_Multiplication.pdb
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.csprojAssemblyReference.cache
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.frm_getData.resources
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.frm_operation.resources
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.frm_results.resources
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.Properties.Resources.resources
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.csproj.GenerateResource.cache
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.csproj.CoreCompileInputs.cache
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.exe
+C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.pdb
