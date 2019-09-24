@@ -22,7 +22,8 @@ namespace WindowsForms_Multiplication
         public static int d4;
         static int[,] aux_A;
         static int[,] aux_B;
-        
+        public static int flag_A;
+        public static int flag_B;
         private void button1_Click(object sender, EventArgs e)
         {
         
@@ -36,10 +37,19 @@ namespace WindowsForms_Multiplication
                 {
                     if (d1 == d3 && d2 == d4)
                     {
-                      
+                        flag_A = 1;
                         frm_operation frmk = new frm_operation();
                         frmk.Show();
+                        
                         this.Hide();
+                    }else if (d2==d3)
+                    {
+                        flag_B = 1;
+                        frm_operation frmk = new frm_operation();
+                        frmk.Show();
+                        
+                        this.Hide();
+
                     }
                     else
                     {

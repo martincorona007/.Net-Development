@@ -26,7 +26,7 @@ namespace WindowsForms_Multiplication
         {
 
         }
-        public void get_results(int[,] ax,int size)
+        public void get_results_A(int[,] ax,int size)
         {
              for(int i = 1; i <= size; i++)
             {
@@ -42,7 +42,23 @@ namespace WindowsForms_Multiplication
                 }
             }
         }
+        public void get_results_B(int[,] ax, int r,int c)
+        {
+            for (int i = 1; i <= c; i++)
+            {
+                dGV_results.Columns.Add(i.ToString(), i.ToString());
+            }
+            dGV_results.Rows.Add(r * c);
 
+            for (int j = 0; j < ax.GetLength(0); j++)
+            {
+                for (int k = 0; k < ax.GetLength(1); k++)
+                {
+                    
+                    dGV_results[k, j].Value = ax[j, k];
+                }
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();

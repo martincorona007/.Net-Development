@@ -10,3 +10,15 @@ C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplicat
 C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.csproj.CoreCompileInputs.cache
 C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.exe
 C:\Users\alien\source\repos\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.pdb
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\bin\Debug\WindowsForms_Multiplication.exe.config
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\bin\Debug\WindowsForms_Multiplication.exe
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\bin\Debug\WindowsForms_Multiplication.pdb
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.csprojAssemblyReference.cache
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.frm_getData.resources
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.frm_operation.resources
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.frm_results.resources
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.Properties.Resources.resources
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.csproj.GenerateResource.cache
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.csproj.CoreCompileInputs.cache
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.exe
+C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.pdb
