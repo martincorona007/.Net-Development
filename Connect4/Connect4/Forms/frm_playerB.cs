@@ -60,7 +60,7 @@ namespace Connect4.Forms
             //load_data(ro,co);
             //read_matrix_A(ro, co);
             //  delta();
-            print();
+           // print();
             //get_winner();
         }
         private void get_winner()
@@ -860,24 +860,75 @@ namespace Connect4.Forms
         /*****************************************************************************************/
         private bool compare_D1()
         {
-            for(int i = 0; i <= 3; i++)
+            int i = 0, j = 1, k = 2, z = 3;
+
+            for (int iter = 0; iter <= 5; iter++)
             {
-                for(int j = 2; j <= 5; j++)
+                if ((i != 4 && j != 5 && k != 6 && z != 7))
                 {
-                    if ((x[0, i] == 0 && x[1, i+1] == 0) && (x[2, j] == 0 && x[3, j+1] == 0))
+                    Console.WriteLine(" i" + i + " j" + j + " k" + k + " z" + z);
+                    if ((x[0, i] == 0 && x[1, j] == 0) && (x[2, k] == 0 && x[3, z] == 0))
                     {
 
-                    }else
+                    }
+                    else
                     {
-                        if (((x[0,i]==x[1,i+1])&&(x[2,j]==x[3,j+1])) && ((x[0,i]==x[3,j+1])&&(x[1,i+1]==x[2,j])))
+                        if (((x[0, i] == x[1, j]) && (x[2, k] == x[3, z])) && ((x[1, j] == x[2, k]) && (x[0, i] == x[3, z])))
                         {
                             Console.WriteLine("yesD1");
+                            
                             res6 = true;
+                        }
+                        i+=1; j+=1; k+=1; z+=1;
+                    }
+                    
+                }
+                
 
+            }
+            /*for (int i = 0; i <= 3; i++)
+            {
+                for (int j = 1; j <= 4; j++)
+                {
+                    for (int k = 2; k <= 5; k++)
+                    {
+                        for (int it = 3; it <= 6; it++)
+                        {
+                            if ((x[0, i] == 0 && x[1, j] == 0) && (x[2, k] == 0 && x[3, it] == 0))
+                            {
+
+                            }
+                            else if (((x[0, i] == x[1, j]) && (x[2, k] == x[3, it])) && ((x[0, i] == x[2, k]) && (x[1, j] == x[3, it])))
+                            {
+                                Console.WriteLine("" + i, j, k, it);
+                                Console.WriteLine("yesD1");
+                                res6 = true;
+
+                            }
                         }
                     }
+
+
                 }
-            }
+            }*/
+            /* for (int j = 2; j <= 5; j++)
+             {
+                 for (int i = 0; i <= 3; i++)
+                 {
+
+                     if ((x[0, i] == 0 && x[1, i+1] == 0) && (x[2, j] == 0 && x[3, j+1] == 0))
+                     {
+
+                     }else if (((x[0,i]==x[1,i+1])&&(x[2,j]==x[3,j+1])) && ((x[0,i]==x[2,j])&&(x[1,i+1]==x[3,j+1])))
+                     {
+                             Console.WriteLine("yesD1");
+                             res6 = true;
+
+                     }
+
+                 }
+             }
+             */
             /*int i = 0, j = 1, k = 2, z = 3;
 
             for (int iter = 0; iter <= 4; iter++)
@@ -907,27 +958,25 @@ namespace Connect4.Forms
         }
         private bool compare_D2()
         {
-            int i = 0, j = 1, k = 2, z = 3;
-
-            for (int iter = 0; iter <= 4; iter++)
+            /*for (int i = 0; i <= 3; i++)
             {
-                if ((i != 3 && j != 4 && k != 5 && z != 6))
+                for (int j = 2; j <= 5; j++)
                 {
-                    if ((x[1, i] == 0 && x[2, j] == 0) && (x[3, k] == 0 && x[4, z] == 0))
+                    if ((x[1, i] == 0 && x[2, i + 1] == 0) && (x[3, j] == 0 && x[4, j + 1] == 0))
                     {
 
                     }
                     else
                     {
-                        if (((x[1, i] == x[2, j]) && (x[3, k] == x[4, z])) && ((x[2, j] == x[3, k]) && (x[1, i] == x[4, z])))
+                        if (((x[1, i] == x[2, i + 1]) && (x[3, j] == x[4, j + 1])) && ((x[1, i] == x[4, j + 1]) && (x[2, i + 1] == x[3, j])))
                         {
                             Console.WriteLine("yesD2");
-                            res7 = true;
+                            res6 = true;
+
                         }
-                        i++; j++; k++; z++;
                     }
                 }
-            }
+            }*/
             return res7;
         }
         private bool compare_D3()
