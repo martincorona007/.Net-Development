@@ -26,7 +26,7 @@ namespace Connect4.Forms
         int s7 = 5;
         int player = 1;
         int color;
-        
+
         bool res1;
         bool res2;
         bool res3;
@@ -52,7 +52,7 @@ namespace Connect4.Forms
                 }
             }*/
             print();
-           // get_winner();
+            // get_winner();
         }
 
         private void frm_playerB_Load(object sender, EventArgs e)
@@ -60,30 +60,61 @@ namespace Connect4.Forms
             //load_data(ro,co);
             //read_matrix_A(ro, co);
             //  delta();
-           // print();
+            // print();
             //get_winner();
         }
         private void get_winner()
         {
-            Console.WriteLine("last player " + player);
+            //Console.WriteLine("last player " + player);
+            if (player == 2)
+            {
+                // Console.WriteLine("last player 1");
+                if (compare_h1() == true || compare_h2() == true || compare_h3() == true || compare_h4() == true || compare_v1() == true || compare_v2() == true || compare_v3() == true || compare_D1() == true || compare_D2() == true || compare_D3() == true || compare_D4() == true || compare_D5() == true || compare_D6() == true)
+                {
+                    Console.WriteLine("player 1 won");
+                    MessageBox.Show("Player 1 won");
+                    Menu m = new Menu();
+                    m.Show();
+                    this.Hide();
+                }
+            }
+            else if (player == 1)
+            {
+                if (compare_h1() == true || compare_h2() == true || compare_h3() == true || compare_h4() == true || compare_v1() == true || compare_v2() == true || compare_v3() == true || compare_D1() == true || compare_D2() == true || compare_D3() == true || compare_D4() == true || compare_D5() == true || compare_D6() == true)
+                {
+                    Console.WriteLine("player 2 won");
+                    MessageBox.Show("Player 2 won");
+                    Menu m = new Menu();
+                    m.Show();
+                    this.Hide();
+                }
+                // Console.WriteLine("last player 2");
+
+            }
         }
         private int delta()
         {
             if (player == 1)
             {
                 Console.WriteLine("red 1");
+
                 player = 2;//change player
                 color = 1;//print color red where ever the boton is press 
-            } else if (player == 2)
+                lbl_player.Text = "Player 2 Turn";
+                this.lbl_turnb.Image = Properties.Resources.rsz_p1_blue;
+            }
+            else if (player == 2)
             {
                 player = 1;//change player
                 Console.WriteLine("blue 2");
+                lbl_player.Text = "Player 1 Turn";
+                this.lbl_turnb.Image = Properties.Resources.rsz_p2_red;
                 color = 2;//print color blue where ever the boton is press 
             }
             return color;
         }
-        
-        
+
+
         private void btn_section_1_Click(object sender, EventArgs e)
         {
             int aux = delta();
@@ -155,7 +186,7 @@ namespace Connect4.Forms
                 }
                 Console.WriteLine("Color Blue out");
             }
-            
+
             s1 -= 1;
             print();
             compare_h1();
@@ -211,7 +242,7 @@ namespace Connect4.Forms
                     x[0, 1] = 1;
                 }
             }
-            else if(aux==2)
+            else if (aux == 2)
             {
                 Console.WriteLine("Color Blue out");
                 if (s2 == 5)
@@ -245,7 +276,7 @@ namespace Connect4.Forms
                     x[0, 1] = 2;
                 }
             }
-            
+
             s2 -= 1;
             print();
             compare_h1();
@@ -333,7 +364,7 @@ namespace Connect4.Forms
                     x[0, 2] = 2;
                 }
             }
-            
+
             s3 -= 1;
             print();
             compare_h1();
@@ -422,7 +453,7 @@ namespace Connect4.Forms
                     x[0, 3] = 2;
                 }
             }
-            
+
             s4 -= 1;
             print();
             compare_h1();
@@ -510,7 +541,7 @@ namespace Connect4.Forms
                     x[0, 4] = 2;
                 }
             }
-            
+
             s5 -= 1;
             print();
             compare_h1();
@@ -597,7 +628,7 @@ namespace Connect4.Forms
                     x[0, 5] = 2;
                 }
             }
-            
+
             s6 -= 1;
             print();
             compare_h1();
@@ -615,7 +646,7 @@ namespace Connect4.Forms
             compare_D6();
             get_winner();
         }
-        
+
         private void btn_section_7_Click(object sender, EventArgs e)
         {
             int aux = delta();
@@ -744,7 +775,7 @@ namespace Connect4.Forms
                 }
                 else if ((x[i, 1] == x[i, 2]) && (x[i, 3] == x[i, 4]) && (x[i, 1] == x[i, 3]) && (x[i, 2] == x[i, 4]))
                 {
-                    res5 = true;
+                    res2 = true;
                     Console.WriteLine("yesh2");
                 }
                 else
@@ -764,7 +795,7 @@ namespace Connect4.Forms
                 }
                 else if ((x[i, 2] == x[i, 3]) && (x[i, 4] == x[i, 5]) && (x[i, 2] == x[i, 4]) && (x[i, 3] == x[i, 5]))
                 {
-                    res5 = true;
+                    res3 = true;
                     Console.WriteLine("yesh3");
                 }
                 else
@@ -784,7 +815,7 @@ namespace Connect4.Forms
                 }
                 else if ((x[i, 3] == x[i, 4]) && (x[i, 5] == x[i, 6]) && (x[i, 3] == x[i, 5]) && (x[i, 4] == x[i, 6]))
                 {
-                    res5 = true;
+                    res4 = true;
                     Console.WriteLine("yesh4");
                 }
                 else
@@ -792,7 +823,7 @@ namespace Connect4.Forms
                     //Console.WriteLine("nopV4");
                 }
             }
-            return res5;
+            return res4;
         }
         /**************************************************************************************/
         private bool compare_v1()
@@ -805,7 +836,7 @@ namespace Connect4.Forms
                 }
                 else if ((x[0, i] == x[1, i]) && (x[2, i] == x[3, i]) && (x[0, i] == x[2, i]) && (x[1, i] == x[3, i]))
                 {
-                    res3 = true;
+                    res5 = true;
                     Console.WriteLine("yesV1");
                 }
                 else
@@ -813,7 +844,7 @@ namespace Connect4.Forms
                     // Console.WriteLine("nopH2");
                 }
             }
-            return res3;
+            return res5;
         }
         private bool compare_v2()
         {
@@ -825,7 +856,7 @@ namespace Connect4.Forms
                 }
                 else if ((x[1, i] == x[2, i]) && (x[3, i] == x[4, i]) && (x[1, i] == x[3, i]) && (x[2, i] == x[4, i]))
                 {
-                    res4 = true;
+                    res6 = true;
                     Console.WriteLine("yesV2");
                 }
                 else
@@ -833,8 +864,8 @@ namespace Connect4.Forms
                     // Console.WriteLine("nopH2");
                 }
             }
-            
-            return res4;
+
+            return res6;
         }
         private bool compare_v3()
         {
@@ -846,7 +877,7 @@ namespace Connect4.Forms
                 }
                 else if ((x[2, i] == x[3, i]) && (x[4, i] == x[5, i]) && (x[2, i] == x[4, i]) && (x[3, i] == x[5, i]))
                 {
-                    res5 = true;
+                    res7 = true;
                     Console.WriteLine("yesV3");
                 }
                 else
@@ -854,19 +885,39 @@ namespace Connect4.Forms
                     // Console.WriteLine("nopH2");
                 }
             }
-            return res5;
+            return res7;
         }
-        
+
         /*****************************************************************************************/
         private bool compare_D1()
         {
+            /*
+                if (((x[0, 0] == x[1, 1]) && (x[2, 2] == x[3, 3])) && ((x[1, 1] == x[2, 2]) && (x[3, 3] == x[3, 3]))&& ((x[0, 0] !=0 && x[1, 1] != 0) && (x[2, 2] !=0 && x[3, 3] != 0)))
+                {
+                    Console.WriteLine("yesD1.");
+                }
+                else if (((x[0, 1] == x[1, 2]) && (x[2, 3] == x[3, 4])) && ((x[1, 2] == x[2, 3]) && (x[0, 1] == x[3, 4])) && ((x[0, 1] != 0 && x[1, 2] != 0) && (x[2, 3] != 0 && x[3, 4] != 0)))
+                {
+                    Console.WriteLine("yesD1..");
+                }
+                else if (((x[0, 2] == x[1, 3]) && (x[2, 4] == x[3, 5])) && ((x[1, 3] == x[2, 4]) && (x[0, 2] == x[3, 5])) && ((x[0, 2] != 0 && x[1, 3] != 0) && (x[2, 4] != 0 && x[3, 5] != 0)))
+                {
+                    Console.WriteLine("yesD1...");
+                }
+                else if (((x[0, 3] == x[1, 4]) && (x[2, 5] == x[3, 6])) && ((x[1, 4] == x[2, 5]) && (x[0, 3] == x[3, 6])) && ((x[0, 3] != 0 && x[1, 4] != 0) && (x[2, 5] != 0 && x[3, 6] != 0)))
+                {
+                    Console.WriteLine("yesD1....");
+                }
+            */
+
+
             int i = 0, j = 1, k = 2, z = 3;
 
             for (int iter = 0; iter <= 5; iter++)
             {
                 if ((i != 4 && j != 5 && k != 6 && z != 7))
                 {
-                    Console.WriteLine(" i" + i + " j" + j + " k" + k + " z" + z);
+                    //  Console.WriteLine(" i" + i + " j" + j + " k" + k + " z" + z);
                     if ((x[0, i] == 0 && x[1, j] == 0) && (x[2, k] == 0 && x[3, z] == 0))
                     {
 
@@ -876,14 +927,14 @@ namespace Connect4.Forms
                         if (((x[0, i] == x[1, j]) && (x[2, k] == x[3, z])) && ((x[1, j] == x[2, k]) && (x[0, i] == x[3, z])))
                         {
                             Console.WriteLine("yesD1");
-                            
-                            res6 = true;
+
+                            res7 = true;
                         }
-                        i+=1; j+=1; k+=1; z+=1;
+                        i += 1; j += 1; k += 1; z += 1;
                     }
-                    
+
                 }
-                
+
 
             }
             /*for (int i = 0; i <= 3; i++)
@@ -928,8 +979,8 @@ namespace Connect4.Forms
 
                  }
              }
-             */
-            /*int i = 0, j = 1, k = 2, z = 3;
+             *//*
+            int i = 0, j = 1, k = 2, z = 3;
 
             for (int iter = 0; iter <= 4; iter++)
             {
@@ -954,10 +1005,54 @@ namespace Connect4.Forms
             }
             */
 
-            return res6;
+            return res7;
         }
         private bool compare_D2()
         {
+            /*
+            if (((x[1, 0] == x[2, 1]) && (x[3, 2] == x[4, 3])) && ((x[2, 1] == x[3, 2]) && (x[1, 0] == x[4, 3])) && ((x[1, 0] != 0 && x[2, 1] != 0) && (x[3, 2] != 0 && x[4, 3] != 0)))
+            {
+                Console.WriteLine("yesD2.");
+            }
+            else if (((x[1, 1] == x[2, 2]) && (x[3, 3] == x[4, 4])) && ((x[2, 2] == x[3, 3]) && (x[1, 1] == x[4, 4])) && ((x[1, 1] != 0 && x[2, 2] != 0) && (x[3, 3] != 0 && x[4, 4] != 0)))
+            {
+                Console.WriteLine("yesD2..");
+            }
+            else if (((x[1, 2] == x[2, 3]) && (x[3, 4] == x[4, 5])) && ((x[2, 3] == x[3, 4]) && (x[1, 2] == x[4, 5])) && ((x[1, 2] != 0 && x[2, 3] != 0) && (x[3, 4] != 0 && x[4, 5] != 0)))
+            {
+                Console.WriteLine("yesD2...");
+            }
+            else if (((x[1, 3] == x[2, 4]) && (x[3, 5] == x[4, 6])) && ((x[2, 4] == x[3, 5]) && (x[1, 3] == x[4, 6])) && ((x[1, 3] != 0 && x[2, 4] != 0) && (x[3, 5] != 0 && x[4, 6] != 0)))
+            {
+                Console.WriteLine("yesD2....");
+            }*/
+
+            int i = 0, j = 1, k = 2, z = 3;
+
+            for (int iter = 0; iter <= 5; iter++)
+            {
+                if ((i != 4 && j != 5 && k != 6 && z != 7))
+                {
+                    //Console.WriteLine(" i" + i + " j" + j + " k" + k + " z" + z);
+                    if ((x[1, i] == 0 && x[2, j] == 0) && (x[3, k] == 0 && x[4, z] == 0))
+                    {
+
+                    }
+                    else
+                    {
+                        if (((x[1, i] == x[2, j]) && (x[3, k] == x[4, z])) && ((x[2, j] == x[3, k]) && (x[1, i] == x[4, z])))
+                        {
+                            Console.WriteLine("yesD2");
+
+                            res8 = true;
+                        }
+                        i += 1; j += 1; k += 1; z += 1;
+                    }
+
+                }
+
+
+            }
             /*for (int i = 0; i <= 3; i++)
             {
                 for (int j = 2; j <= 5; j++)
@@ -977,16 +1072,34 @@ namespace Connect4.Forms
                     }
                 }
             }*/
-            return res7;
+            return res8;
         }
         private bool compare_D3()
-        {
+        {/*
+            if (((x[1, 0] == x[2, 1]) && (x[3, 2] == x[4, 3])) && ((x[2, 1] == x[3, 2]) && (x[1, 0] == x[4, 3])) && ((x[1, 0] != 0 && x[2, 1] != 0) && (x[3, 2] != 0 && x[4, 3] != 0)))
+            {
+                Console.WriteLine("yesD2.");
+            }
+            else if (((x[1, 1] == x[2, 2]) && (x[3, 3] == x[4, 4])) && ((x[2, 2] == x[3, 3]) && (x[1, 1] == x[4, 4])) && ((x[1, 1] != 0 && x[2, 2] != 0) && (x[3, 3] != 0 && x[4, 4] != 0)))
+            {
+                Console.WriteLine("yesD2..");
+            }
+            else if (((x[1, 2] == x[2, 3]) && (x[3, 4] == x[4, 5])) && ((x[2, 3] == x[3, 4]) && (x[1, 2] == x[4, 5])) && ((x[1, 2] != 0 && x[2, 3] != 0) && (x[3, 4] != 0 && x[4, 5] != 0)))
+            {
+                Console.WriteLine("yesD2...");
+            }
+            else if (((x[1, 3] == x[2, 4]) && (x[3, 5] == x[4, 6])) && ((x[2, 4] == x[3, 5]) && (x[1, 3] == x[4, 6])) && ((x[1, 3] != 0 && x[2, 4] != 0) && (x[3, 5] != 0 && x[4, 6] != 0)))
+            {
+                Console.WriteLine("yesD2....");
+            }*/
+
             int i = 0, j = 1, k = 2, z = 3;
 
-            for (int iter = 0; iter <= 4; iter++)
+            for (int iter = 0; iter <= 5; iter++)
             {
-                if ((i != 3 && j != 4 && k != 5 && z != 6))
+                if ((i != 4 && j != 5 && k != 6 && z != 7))
                 {
+                    //Console.WriteLine(" i" + i + " j" + j + " k" + k + " z" + z);
                     if ((x[2, i] == 0 && x[3, j] == 0) && (x[4, k] == 0 && x[5, z] == 0))
                     {
 
@@ -996,96 +1109,146 @@ namespace Connect4.Forms
                         if (((x[2, i] == x[3, j]) && (x[4, k] == x[5, z])) && ((x[3, j] == x[4, k]) && (x[2, i] == x[5, z])))
                         {
                             Console.WriteLine("yesD3");
-                            res7 = true;
+
+                            res9 = true;
                         }
-                        i++; j++; k++; z++;
+                        i += 1; j += 1; k += 1; z += 1;
                     }
+
                 }
+
+
             }
-            return res8;
+
+            return res9;
         }
         private bool compare_D4()
         {
-            int i = 3, j = 2, k = 1, z = 0;
+            if (((x[0, 6] == x[1, 5]) && (x[2, 4] == x[3, 3])) && ((x[1, 5] == x[2, 4]) && (x[0, 6] == x[3, 3])) && ((x[0, 6] != 0 && x[1, 5] != 0) && (x[2, 4] != 0 && x[3, 3] != 0)))
+            {
+                res10 = true;
+                Console.WriteLine("yesD4.");
+            }
+            else if (((x[0, 5] == x[1, 4]) && (x[2, 3] == x[3, 2])) && ((x[1, 4] == x[2, 3]) && (x[0, 5] == x[3, 2])) && ((x[0, 5] != 0 && x[1, 4] != 0) && (x[2, 3] != 0 && x[3, 2] != 0)))
+            {
+                Console.WriteLine("yesD4.."); res10 = true;
+            }
+            else if (((x[0, 4] == x[1, 3]) && (x[2, 2] == x[3, 1])) && ((x[1, 3] == x[2, 2]) && (x[0, 4] == x[3, 1])) && ((x[0, 4] != 0 && x[1, 3] != 0) && (x[2, 2] != 0 && x[3, 1] != 0)))
+            {
+                Console.WriteLine("yesD4...");
+                res10 = true;
+            }
+            else if (((x[0, 3] == x[1, 2]) && (x[2, 1] == x[3, 0])) && ((x[1, 2] == x[2, 1]) && (x[0, 3] == x[3, 0])) && ((x[0, 3] != 0 && x[1, 2] != 0) && (x[2, 1] != 0 && x[3, 0] != 0)))
+            {
+                Console.WriteLine("yesD4....");
+                res10 = true;
+            }
+
+
+
+
+            /*
+            int i = 6, j = 5, k = 4, z = 3;
 
             for (int iter = 0; iter <= 4; iter++)
             {
-                if ((i != 6 && j != 5 && k != 4 && z != 3))
+                if ((i != 2 && j != 1 && k != 0 && z != -1))
                 {
+                    Console.WriteLine("+ i" + i + " j" + j + " k" + k + " z" + z);
                     if ((x[0, i] == 0 && x[1, j] == 0) && (x[2, k] == 0 && x[3, z] == 0))
                     {
 
                     }
                     else
                     {
+                     //   Console.WriteLine("increment");
                         if (((x[0, i] == x[1, j]) && (x[2, k] == x[3, z])) && ((x[1, j] == x[2, k]) && (x[0, i] == x[3, z])))
                         {
                             Console.WriteLine("yesD4");
-                            res10 = true;
+
+                            res6 = true;
                         }
-                        i++; j++; k++; z++;
+                        i -= 1; j -= 1; k -= 1; z -= 1;
                     }
+
                 }
-            }
-            return res9;
+                i -= 1; j -= 1; k -= 1; z -= 1;
+
+
+            }*/
+            return res10;
         }
         private bool compare_D5()
         {
-            bool flag =true;
-            
-            int i = 3, j = 2, k = 1, z = 0;
-
-            for (int iter = 0; iter <= 4; iter++)
+            if (((x[1, 6] == x[2, 5]) && (x[3, 4] == x[4, 3])) && ((x[2, 5] == x[3, 4]) && (x[1, 6] == x[4, 3])) && ((x[1, 6] != 0 && x[2, 5] != 0) && (x[3, 4] != 0 && x[4, 3] != 0)))
             {
-                if ((i != 6 && j != 5 && k != 4 && z != 3))
-                {
-                    if ((x[1, i] == 0 && x[2, j] == 0) && (x[3, k] == 0 && x[4, z] == 0))
-                    {
-
-                    }
-                    else
-                    {
-                        if (((x[1, i] == x[2, j]) && (x[3, k] == x[4, z])) && ((x[2, j] == x[3, k]) && (x[1, i] == x[4, z])))
-                        {
-                            Console.WriteLine("yesD5");
-                            res10 = true;
-                        }
-                        i++; j++; k++; z++;
-                    }
-                }
+                Console.WriteLine("yesD5.");
+                res11 = true;
             }
-                
-            
-            return res10;
+            else if (((x[1, 5] == x[2, 4]) && (x[3, 3] == x[4, 2])) && ((x[2, 4] == x[3, 3]) && (x[1, 5] == x[4, 2])) && ((x[1, 5] != 0 && x[2, 4] != 0) && (x[3, 3] != 0 && x[4, 2] != 0)))
+            {
+                Console.WriteLine("yesD5.."); res11 = true;
+            }
+            else if (((x[1, 4] == x[2, 3]) && (x[3, 2] == x[4, 1])) && ((x[2, 3] == x[3, 2]) && (x[1, 4] == x[4, 1])) && ((x[1, 4] != 0 && x[2, 3] != 0) && (x[3, 2] != 0 && x[4, 1] != 0)))
+            {
+                Console.WriteLine("yesD5..."); res11 = true;
+            }
+            else if (((x[1, 3] == x[2, 2]) && (x[3, 1] == x[4, 0])) && ((x[2, 2] == x[3, 1]) && (x[1, 3] == x[4, 0])) && ((x[1, 3] != 0 && x[2, 2] != 0) && (x[3, 1] != 0 && x[4, 0] != 0)))
+            {
+                Console.WriteLine("yesD5...."); res11 = true;
+            }
+
+            return res11;
 
         }
         private bool compare_D6()
         {
-            int i = 3, j = 2, k = 1, z = 0;
-            
-
-            for (int iter = 0; iter <= 4; iter++)
+            if (((x[2, 6] == x[3, 5]) && (x[4, 4] == x[5, 3])) && ((x[3, 5] == x[4, 4]) && (x[2, 6] == x[5, 3])) && ((x[2, 6] != 0 && x[3, 5] != 0) && (x[4, 4] != 0 && x[5, 3] != 0)))
             {
-                if ((i != 6 && j != 5 && k != 4 && z != 3))
-                {
-                    if ((x[2, i] == 0 && x[3, j] == 0) && (x[4, k] == 0 && x[5, z] == 0))
-                    {
-
-                    }
-                    else
-                    {
-                        if (((x[2, i] == x[3, j]) && (x[4, k] == x[5, z])) && ((x[3, j] == x[4, k]) && (x[2, i] == x[5, z])))
-                        {
-                            Console.WriteLine("yesD6");
-                            res11 = true;
-                        }
-                        i++; j++; k++; z++;
-                    }
-                }
+                Console.WriteLine("yesD6."); res12 = true;
+            }
+            else if (((x[2, 5] == x[3, 4]) && (x[4, 3] == x[5, 2])) && ((x[3, 4] == x[4, 3]) && (x[2, 5] == x[5, 2])) && ((x[2, 5] != 0 && x[3, 4] != 0) && (x[4, 3] != 0 && x[5, 2] != 0)))
+            {
+                Console.WriteLine("yesD6.."); res12 = true;
+            }
+            else if (((x[2, 4] == x[3, 3]) && (x[4, 2] == x[5, 1])) && ((x[3, 3] == x[4, 2]) && (x[2, 4] == x[5, 1])) && ((x[2, 4] != 0 && x[3, 3] != 0) && (x[4, 2] != 0 && x[5, 1] != 0)))
+            {
+                Console.WriteLine("yesD6..."); res12 = true;
+            }
+            else if (((x[2, 3] == x[3, 2]) && (x[4, 1] == x[5, 0])) && ((x[3, 2] == x[4, 1]) && (x[2, 3] == x[5, 0])) && ((x[2, 3] != 0 && x[3, 2] != 0) && (x[4, 1] != 0 && x[5, 0] != 0)))
+            {
+                Console.WriteLine("yesD6...."); res12 = true;
             }
 
+            /* int i = 6, j = 5, k = 4, z = 3;
 
-            return res11;
+             for (int iter = 0; iter <= 4; iter++)
+             {
+                 if ((i != 2 && j != 1 && k != 0 && z != -1))
+                 {
+                     Console.WriteLine("/ i" + i + " j" + j + " k" + k + " z" + z);
+                     if ((x[2, i] == 0 && x[3, j] == 0) && (x[4, k] == 0 && x[5, z] == 0))
+                     {
+
+                     }
+                     else
+                     {
+                         //   Console.WriteLine("increment");
+                         if (((x[1, i] == x[2, j]) && (x[3, k] == x[4, z])) && ((x[2, j] == x[3, k]) && (x[1, i] == x[4, z])))
+                         {
+                             Console.WriteLine("yesD6");
+
+                             res6 = true;
+                         }
+                         i -= 1; j -= 1; k -= 1; z -= 1;
+                     }
+
+                 }
+                 i -= 1; j -= 1; k -= 1; z -= 1;
+
+
+             }*/
+            return res12;
         }
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -1098,6 +1261,11 @@ namespace Connect4.Forms
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
