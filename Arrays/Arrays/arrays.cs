@@ -114,9 +114,9 @@ namespace Arrays
         public int sum_matrix(int[,] m)
         {
             int sum = 0;
-            for (int i = 0; i < m.Length; i++)
+            for (int i = 0; i < m.GetLength(0); i++)
             {
-                for (int j = 0; j < m.Length; j++)
+                for (int j = 0; j < m.GetLength(1); j++)
                 {
                     sum += m[i, j];
                 }

@@ -5,3 +5,10 @@ C:\Users\alien\source\repos\Arrays\Arrays\obj\Debug\Arrays.csprojAssemblyReferen
 C:\Users\alien\source\repos\Arrays\Arrays\obj\Debug\Arrays.csproj.CoreCompileInputs.cache
 C:\Users\alien\source\repos\Arrays\Arrays\obj\Debug\Arrays.exe
 C:\Users\alien\source\repos\Arrays\Arrays\obj\Debug\Arrays.pdb
+C:\Users\martin\Documents\GitHub\.Net-Development\Arrays\Arrays\bin\Debug\Arrays.exe.config
+C:\Users\martin\Documents\GitHub\.Net-Development\Arrays\Arrays\bin\Debug\Arrays.exe
+C:\Users\martin\Documents\GitHub\.Net-Development\Arrays\Arrays\bin\Debug\Arrays.pdb
+C:\Users\martin\Documents\GitHub\.Net-Development\Arrays\Arrays\obj\Debug\Arrays.csprojAssemblyReference.cache
+C:\Users\martin\Documents\GitHub\.Net-Development\Arrays\Arrays\obj\Debug\Arrays.csproj.CoreCompileInputs.cache
+C:\Users\martin\Documents\GitHub\.Net-Development\Arrays\Arrays\obj\Debug\Arrays.exe
+C:\Users\martin\Documents\GitHub\.Net-Development\Arrays\Arrays\obj\Debug\Arrays.pdb
