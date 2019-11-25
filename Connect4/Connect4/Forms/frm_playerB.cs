@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,7 +26,7 @@ namespace Connect4.Forms
         int s7 = 5;
         int player = 1;
         int color;
-
+        
         bool res1;
         bool res2;
         bool res3;
@@ -52,7 +52,7 @@ namespace Connect4.Forms
                 }
             }*/
             print();
-            // get_winner();
+           // get_winner();
         }
 
         private void frm_playerB_Load(object sender, EventArgs e)
@@ -60,7 +60,7 @@ namespace Connect4.Forms
             //load_data(ro,co);
             //read_matrix_A(ro, co);
             //  delta();
-            // print();
+           // print();
             //get_winner();
         }
         private void get_winner()
@@ -68,8 +68,8 @@ namespace Connect4.Forms
             //Console.WriteLine("last player " + player);
             if (player == 2)
             {
-                // Console.WriteLine("last player 1");
-                if (compare_h1() == true || compare_h2() == true || compare_h3() == true || compare_h4() == true || compare_v1() == true || compare_v2() == true || compare_v3() == true || compare_D1() == true || compare_D2() == true || compare_D3() == true || compare_D4() == true || compare_D5() == true || compare_D6() == true)
+               // Console.WriteLine("last player 1");
+                if (compare_h1() == true||compare_h2()==true||compare_h3()==true||compare_h4()==true||compare_v1()==true||compare_v2()==true||compare_v3()==true||compare_D1()==true||compare_D2()==true||compare_D3()==true||compare_D4()==true||compare_D5()==true||compare_D6()==true)
                 {
                     Console.WriteLine("player 1 won");
                     MessageBox.Show("Player 1 won");
@@ -88,7 +88,7 @@ namespace Connect4.Forms
                     m.Show();
                     this.Hide();
                 }
-                // Console.WriteLine("last player 2");
+               // Console.WriteLine("last player 2");
 
             }
         }
@@ -102,8 +102,7 @@ namespace Connect4.Forms
                 color = 1;//print color red where ever the boton is press 
                 lbl_player.Text = "Player 2 Turn";
                 this.lbl_turnb.Image = Properties.Resources.rsz_p1_blue;
-            }
-            else if (player == 2)
+            } else if (player == 2)
             {
                 player = 1;//change player
                 Console.WriteLine("blue 2");
@@ -113,8 +112,8 @@ namespace Connect4.Forms
             }
             return color;
         }
-
-
+        
+        
         private void btn_section_1_Click(object sender, EventArgs e)
         {
             int aux = delta();
@@ -186,7 +185,7 @@ namespace Connect4.Forms
                 }
                 Console.WriteLine("Color Blue out");
             }
-
+            
             s1 -= 1;
             print();
             compare_h1();
@@ -242,7 +241,7 @@ namespace Connect4.Forms
                     x[0, 1] = 1;
                 }
             }
-            else if (aux == 2)
+            else if(aux==2)
             {
                 Console.WriteLine("Color Blue out");
                 if (s2 == 5)
@@ -276,7 +275,7 @@ namespace Connect4.Forms
                     x[0, 1] = 2;
                 }
             }
-
+            
             s2 -= 1;
             print();
             compare_h1();
@@ -364,7 +363,7 @@ namespace Connect4.Forms
                     x[0, 2] = 2;
                 }
             }
-
+            
             s3 -= 1;
             print();
             compare_h1();
@@ -453,7 +452,7 @@ namespace Connect4.Forms
                     x[0, 3] = 2;
                 }
             }
-
+            
             s4 -= 1;
             print();
             compare_h1();
@@ -541,7 +540,7 @@ namespace Connect4.Forms
                     x[0, 4] = 2;
                 }
             }
-
+            
             s5 -= 1;
             print();
             compare_h1();
@@ -628,7 +627,7 @@ namespace Connect4.Forms
                     x[0, 5] = 2;
                 }
             }
-
+            
             s6 -= 1;
             print();
             compare_h1();
@@ -646,7 +645,7 @@ namespace Connect4.Forms
             compare_D6();
             get_winner();
         }
-
+        
         private void btn_section_7_Click(object sender, EventArgs e)
         {
             int aux = delta();
@@ -864,7 +863,7 @@ namespace Connect4.Forms
                     // Console.WriteLine("nopH2");
                 }
             }
-
+            
             return res6;
         }
         private bool compare_v3()
@@ -887,7 +886,7 @@ namespace Connect4.Forms
             }
             return res7;
         }
-
+        
         /*****************************************************************************************/
         private bool compare_D1()
         {
@@ -910,14 +909,14 @@ namespace Connect4.Forms
                 }
             */
 
-
+            
             int i = 0, j = 1, k = 2, z = 3;
 
             for (int iter = 0; iter <= 5; iter++)
             {
                 if ((i != 4 && j != 5 && k != 6 && z != 7))
                 {
-                    //  Console.WriteLine(" i" + i + " j" + j + " k" + k + " z" + z);
+                  //  Console.WriteLine(" i" + i + " j" + j + " k" + k + " z" + z);
                     if ((x[0, i] == 0 && x[1, j] == 0) && (x[2, k] == 0 && x[3, z] == 0))
                     {
 
@@ -927,14 +926,14 @@ namespace Connect4.Forms
                         if (((x[0, i] == x[1, j]) && (x[2, k] == x[3, z])) && ((x[1, j] == x[2, k]) && (x[0, i] == x[3, z])))
                         {
                             Console.WriteLine("yesD1");
-
+                            
                             res7 = true;
                         }
-                        i += 1; j += 1; k += 1; z += 1;
+                        i+=1; j+=1; k+=1; z+=1;
                     }
-
+                    
                 }
-
+                
 
             }
             /*for (int i = 0; i <= 3; i++)
@@ -1026,7 +1025,7 @@ namespace Connect4.Forms
             {
                 Console.WriteLine("yesD2....");
             }*/
-
+            
             int i = 0, j = 1, k = 2, z = 3;
 
             for (int iter = 0; iter <= 5; iter++)
@@ -1092,7 +1091,7 @@ namespace Connect4.Forms
             {
                 Console.WriteLine("yesD2....");
             }*/
-
+            
             int i = 0, j = 1, k = 2, z = 3;
 
             for (int iter = 0; iter <= 5; iter++)
@@ -1117,9 +1116,9 @@ namespace Connect4.Forms
 
                 }
 
-
+                
             }
-
+            
             return res9;
         }
         private bool compare_D4()
@@ -1144,9 +1143,9 @@ namespace Connect4.Forms
                 res10 = true;
             }
 
-
-
-
+                
+            
+        
             /*
             int i = 6, j = 5, k = 4, z = 3;
 
@@ -1266,6 +1265,11 @@ namespace Connect4.Forms
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
         {
 
         }

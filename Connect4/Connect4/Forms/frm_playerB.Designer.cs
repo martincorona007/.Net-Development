@@ -77,8 +77,8 @@
             this.lbl_section_130 = new System.Windows.Forms.Label();
             this.lbl_section_201 = new System.Windows.Forms.Label();
             this.lbl_section_100 = new System.Windows.Forms.Label();
-            this.lbl_turnb = new System.Windows.Forms.Label();
             this.lbl_player = new System.Windows.Forms.Label();
+            this.lbl_turnb = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_section_1
@@ -488,27 +488,28 @@
             this.lbl_section_100.TabIndex = 47;
             this.lbl_section_100.Click += new System.EventHandler(this.label1_Click);
             // 
-            // lbl_turnb
-            // 
-            this.lbl_turnb.Location = new System.Drawing.Point(895, 244);
-            this.lbl_turnb.Name = "lbl_turnb";
-            this.lbl_turnb.Size = new System.Drawing.Size(111, 86);
-            this.lbl_turnb.TabIndex = 94;
-            // 
             // lbl_player
             // 
             this.lbl_player.AutoSize = true;
             this.lbl_player.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_player.Location = new System.Drawing.Point(925, 190);
+            this.lbl_player.Location = new System.Drawing.Point(922, 176);
             this.lbl_player.Name = "lbl_player";
             this.lbl_player.Size = new System.Drawing.Size(0, 15);
-            this.lbl_player.TabIndex = 93;
+            this.lbl_player.TabIndex = 91;
+            this.lbl_player.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // lbl_turnb
+            // 
+            this.lbl_turnb.Location = new System.Drawing.Point(892, 230);
+            this.lbl_turnb.Name = "lbl_turnb";
+            this.lbl_turnb.Size = new System.Drawing.Size(111, 86);
+            this.lbl_turnb.TabIndex = 92;
             // 
             // frm_playerB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 637);
+            this.ClientSize = new System.Drawing.Size(1098, 637);
             this.Controls.Add(this.lbl_turnb);
             this.Controls.Add(this.lbl_player);
             this.Controls.Add(this.btn_section_7);
@@ -619,7 +620,7 @@
         private System.Windows.Forms.Label lbl_section_716;
         private System.Windows.Forms.Label lbl_section_706;
         private System.Windows.Forms.Button btn_section_7;
-        private System.Windows.Forms.Label lbl_turnb;
         private System.Windows.Forms.Label lbl_player;
+        private System.Windows.Forms.Label lbl_turnb;
     }
 }

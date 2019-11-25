@@ -9,3 +9,14 @@ C:\Users\alien\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF
 C:\Users\alien\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\alien\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\alien\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frm_Principal.resources
+C:\Users\martin\Documents\GitHub\.Net-Development\Multiplication Table\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\martin\Documents\GitHub\.Net-Development\Multiplication Table\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\martin\Documents\GitHub\.Net-Development\Multiplication Table\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\martin\Documents\GitHub\.Net-Development\Multiplication Table\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\martin\Documents\GitHub\.Net-Development\Multiplication Table\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\martin\Documents\GitHub\.Net-Development\Multiplication Table\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.frm_Principal.resources
+C:\Users\martin\Documents\GitHub\.Net-Development\Multiplication Table\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\martin\Documents\GitHub\.Net-Development\Multiplication Table\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\martin\Documents\GitHub\.Net-Development\Multiplication Table\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\martin\Documents\GitHub\.Net-Development\Multiplication Table\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\martin\Documents\GitHub\.Net-Development\Multiplication Table\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
