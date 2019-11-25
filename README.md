@@ -3,12 +3,13 @@ Repo for the subject .Net
 Requiriments
 Microsoft Visual Studio 2017
 MySQL 5.7+
-##Arrays
 
-##Connect4
+## Arrays
 
-##Hotel
+## Connect4
 
-##Multiplication Table
+## Hotel
 
-###WindowsForm_Multiplication
+## Multiplication Table
+
+### WindowsForm_Multiplication
