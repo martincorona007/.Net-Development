@@ -1,7 +1,7 @@
 # .Net-Development
 Repo for the subject .Net
 
-Requiriments
+Requirements
 
 Microsoft Visual Studio 2017
 
