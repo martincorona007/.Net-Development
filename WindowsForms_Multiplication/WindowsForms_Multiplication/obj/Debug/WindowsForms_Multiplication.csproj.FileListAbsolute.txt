@@ -22,3 +22,14 @@ C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\Wi
 C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.csproj.CoreCompileInputs.cache
 C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.exe
 C:\Users\martin\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.pdb
+C:\Users\sicar\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\bin\Debug\WindowsForms_Multiplication.exe.config
+C:\Users\sicar\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\bin\Debug\WindowsForms_Multiplication.exe
+C:\Users\sicar\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\bin\Debug\WindowsForms_Multiplication.pdb
+C:\Users\sicar\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.csprojAssemblyReference.cache
+C:\Users\sicar\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.frm_getData.resources
+C:\Users\sicar\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.frm_operation.resources
+C:\Users\sicar\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.frm_results.resources
+C:\Users\sicar\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.Properties.Resources.resources
+C:\Users\sicar\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.csproj.GenerateResource.cache
+C:\Users\sicar\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.exe
+C:\Users\sicar\Documents\GitHub\.Net-Development\WindowsForms_Multiplication\WindowsForms_Multiplication\obj\Debug\WindowsForms_Multiplication.pdb

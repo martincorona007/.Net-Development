@@ -49,18 +49,18 @@ namespace WindowsForms_Multiplication
             flag_1 = frm_getData.flag_A;
             flag_2 = frm_getData.flag_B;
             
-            for(int i = 1; i <= get_data1; i++)
+            for(int i = 1; i <= get_data2; i++)
             {
                 dGV_Matrix_1.Columns.Add(i.ToString(), i.ToString());
                 
             }
-            dGV_Matrix_1.Rows.Add(get_data1 * get_data2);
+            dGV_Matrix_1.Rows.Add(get_data1);
             for (int j = 1; j <= get_date4; j++)
             {
                 dGV_Matrix_2.Columns.Add(j.ToString(), j.ToString());
             }
             
-            dGV_Matrix_2.Rows.Add(get_data3*get_date4);
+            dGV_Matrix_2.Rows.Add(get_data3);
 
             //how many rows I want?
             Console.WriteLine(flag_1);
